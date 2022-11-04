@@ -23,9 +23,7 @@ const HeroSection = () => {
 
     return (
         <HeroContainer>
-            <HeroBg>
-                
-            </HeroBg>
+            <HeroBg></HeroBg>
             <HeroContent>
                 <HeroH2>Hi, I'm</HeroH2>
                 <HeroH1>Mukhlis Haliqul Karim</HeroH1>
