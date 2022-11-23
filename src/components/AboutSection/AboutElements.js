@@ -6,6 +6,14 @@ export const AboutContainer = styled.div`
     align-items: center;
     height: 75vh;
     position: relative;
+
+    @media screen and (max-width: 768px) {
+        height: 150vh;
+    }
+
+    @media screen and (max-width: 420px) {
+        height: 110vh;
+    }
 `
 
 export const AboutBg = styled.div`
@@ -23,7 +31,7 @@ export const AboutContent = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    margin: 40px auto;
 
     @media screen and (max-width: 768px) {
         flex-direction: column;

@@ -1,0 +1,87 @@
+import styled from "styled-components";
+
+export const ContactContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+        height: 120vh;
+    }
+
+    @media screen and (max-width: 420px) {
+        height: 80vh;
+    }
+`
+
+export const ContactBg = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+`
+
+export const ContactContent = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+`
+
+export const TextWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+`
+
+export const ContactTitle = styled.h1`
+    font-size: 40px;
+    font-weight: 700;
+
+    @media screen and (max-width: 768px) {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+`
+
+export const ContactFormWrapper = styled.div`
+    background-color: #DFF6FF;
+    padding: 20px;
+    border-radius: 20px;
+`
+
+export const Form = styled.form`
+    margin: 10px auto;
+
+    
+`
+
+export const FormLabel = styled.label`
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 10px;
+`
+
+export const FormInput = styled.input`
+    padding: 10px 200px;
+    border-radius: 10px;
+
+    @media screen and (max-width: 768px) {
+        padding: 10px 60px;;
+    }
+`
+
+export const FormBtnWrapper = styled.div`
+    margin-top: 20px;
+`
