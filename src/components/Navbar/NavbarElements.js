@@ -50,11 +50,13 @@ export const ImageLogo = styled.img`
     margin-right: 10px;
 
     @media screen and (max-width: 768px) {
+        height: 70%;
         width: 100%;
         position: relative;
     }
 
     @media screen and (max-width: 576px) {
+        height: 70%;
         width: 100%;
         position: relative;
     }
