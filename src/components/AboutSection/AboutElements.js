@@ -8,11 +8,11 @@ export const AboutContainer = styled.div`
     position: relative;
 
     @media screen and (max-width: 768px) {
-        height: 150vh;
+        height: 80vh;
     }
 
-    @media screen and (max-width: 420px) {
-        height: 110vh;
+    @media screen and (max-width: 576px) {
+        height: 100vh;
     }
 `
 

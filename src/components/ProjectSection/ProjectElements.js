@@ -9,11 +9,11 @@ export const ProjectContainer = styled.div`
     position: relative;
 
     @media screen and (max-width: 768px) {
-        height: 220vh;
+        height: 135vh;
     }
-
-    @media screen and (max-width: 420px) {
-        height: 160vh;
+    
+    @media screen and (max-width: 576px) {
+        height: 150vh;
     }
 `
 
