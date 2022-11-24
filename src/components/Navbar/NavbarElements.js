@@ -48,6 +48,14 @@ export const ImageLogo = styled.img`
     height: 50px;
     width: 100%;
     margin-right: 10px;
+
+    @media screen and (max-width: 768px) {
+        width: 50%;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 50%;
+    }
 `
 
 export const MobileIcon = styled.div`
