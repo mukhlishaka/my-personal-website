@@ -14,6 +14,10 @@ export const ContactContainer = styled.div`
     @media screen and (max-width: 576px) {
         height: 65vh;
     }
+
+    @media screen and (max-width: 360px) {
+        height: 70vh;
+    }
 `
 
 export const ContactBg = styled.div`

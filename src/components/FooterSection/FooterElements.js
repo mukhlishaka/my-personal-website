@@ -72,8 +72,12 @@ export const FooterLinkImage = styled.div`
 
 export const Img = styled.img`
     display: flex;
-    height: 50px;
+    height: 60px;
     width: 100%;
+
+    @media screen and (max-width: 768px) {
+        width: auto;
+    }
 `
 
 export const FooterText = styled.p`

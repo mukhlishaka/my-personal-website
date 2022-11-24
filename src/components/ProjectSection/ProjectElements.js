@@ -15,6 +15,10 @@ export const ProjectContainer = styled.div`
     @media screen and (max-width: 576px) {
         height: 150vh;
     }
+
+    @media screen and (max-width: 360px) {
+        height: 165vh;
+    }
 `
 
 export const ProjectBg = styled.div`
