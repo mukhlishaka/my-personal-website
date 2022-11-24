@@ -16,15 +16,6 @@ export const Nav = styled.nav`
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
     }
-
-
-    @media screen and (max-width: 768px) {
-        height: 100%;
-    }
-
-    @media screen and (max-width: 576px) {
-        width: 100%;
-    }
 `
 
 export const NavbarContainer = styled.div`
@@ -54,16 +45,18 @@ export const NavLogo = styled(LinkR)`
 `
 
 export const ImageLogo = styled.img`
-    height: 50px;
+    height: 70%;
     width: 100%;
     margin-right: 10px;
 
     @media screen and (max-width: 768px) {
         width: 100%;
+        position: relative;
     }
 
     @media screen and (max-width: 576px) {
         width: 100%;
+        position: relative;
     }
 `
 
