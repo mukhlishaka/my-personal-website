@@ -45,20 +45,12 @@ export const NavLogo = styled(LinkR)`
 `
 
 export const ImageLogo = styled.img`
-    height: 70%;
+    height: 60px;
     width: 100%;
     margin-right: 10px;
 
     @media screen and (max-width: 768px) {
-        height: 70%;
-        width: 100%;
-        position: relative;
-    }
-
-    @media screen and (max-width: 576px) {
-        height: 70%;
-        width: 100%;
-        position: relative;
+        width: auto;
     }
 `
 
