@@ -4,7 +4,7 @@ export const ContactContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 85vh;
     position: relative;
 
     @media screen and (max-width: 768px) {
@@ -12,11 +12,11 @@ export const ContactContainer = styled.div`
     }
 
     @media screen and (max-width: 576px) {
-        height: 65vh;
+        height: 70vh;
     }
 
     @media screen and (max-width: 360px) {
-        height: 70vh;
+        height: 75vh;
     }
 `
 
@@ -82,11 +82,23 @@ export const FormLabel = styled.label`
 `
 
 export const FormInput = styled.input`
-    padding: 10px 200px;
+    padding: 10px;
     border-radius: 10px;
+    width: 500px;
 
     @media screen and (max-width: 768px) {
-        padding: 10px 50px;
+        width: auto;
+    }
+`
+
+export const FormTextArea = styled.textarea`
+    width: 500px;
+    height: 80px;
+    border-radius: 10px;
+    padding: 10px;
+
+    @media screen and (max-width: 768px) {
+        width: auto;
     }
 `
 

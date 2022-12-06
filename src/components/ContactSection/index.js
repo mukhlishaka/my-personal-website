@@ -11,7 +11,8 @@ import {
     Form,
     FormLabel,
     FormInput,
-    FormBtnWrapper
+    FormBtnWrapper,
+    FormTextArea
 } from '../ContactSection/ContactElements'
 
 const Contact = () => {
@@ -38,7 +39,7 @@ const Contact = () => {
                         </Form>
                         <Form>
                             <FormLabel>Message</FormLabel>
-                            <FormInput type="text" placeholder="Enter Your Message" />
+                            <FormTextArea type="text" placeholder="Enter Your Message"></FormTextArea>
                         </Form>
                         <FormBtnWrapper>
                             <Button to="login" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">Send</Button>
