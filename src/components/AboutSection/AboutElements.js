@@ -12,7 +12,7 @@ export const AboutContainer = styled.div`
     }
 
     @media screen and (max-width: 576px) {
-        height: 100vh;
+        height: 105vh;
     }
 
     @media screen and (max-width: 360px) {

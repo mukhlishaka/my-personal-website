@@ -20,7 +20,7 @@ const About = () => {
         setHover(!hover)
     }
     return (
-        <AboutContainer>
+        <AboutContainer name="about">
             <AboutBg>
                 <AboutContent>
                     <ImageWrapper>

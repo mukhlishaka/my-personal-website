@@ -23,7 +23,7 @@ const Project = () => {
 
     return (
         <>
-            <ProjectContainer>
+            <ProjectContainer name="project">
                 <ProjectBg>
                     <ProjectContent>
                         <TextWrapper1>

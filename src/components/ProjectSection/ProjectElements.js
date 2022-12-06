@@ -5,7 +5,7 @@ export const ProjectContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 80vh;
     position: relative;
 
     @media screen and (max-width: 768px) {
@@ -13,7 +13,7 @@ export const ProjectContainer = styled.div`
     }
     
     @media screen and (max-width: 576px) {
-        height: 150vh;
+        height: 160vh;
     }
 
     @media screen and (max-width: 360px) {

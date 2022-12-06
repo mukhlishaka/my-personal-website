@@ -20,7 +20,7 @@ const HeroSection = () => {
     }
 
     return (
-        <HeroContainer>
+        <HeroContainer name="home">
             <HeroBg></HeroBg>
             <HeroContent>
                 <HeroH2>Hi, I'm</HeroH2>

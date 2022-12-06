@@ -12,6 +12,7 @@ import {
     FooterText,
     MobileIcon,
     IconItem,
+    LinkIcon
 } from "../FooterSection/FooterElements";
 import { FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 import Logo from '../../images/hakalogowhite.png'
@@ -32,13 +33,19 @@ const Footer = () => {
                                 </FooterText>
                                 <MobileIcon>
                                     <IconItem>
-                                        <FaYoutube />
+                                        <LinkIcon href="https://www.youtube.com/channel/UCdqgiGegCYxUEwlwaDHddqQ" target="blank">
+                                            <FaYoutube />
+                                        </LinkIcon>
                                     </IconItem>
                                     <IconItem>
-                                        <FaTiktok />
+                                        <LinkIcon href="https://www.tiktok.com/@mukhlishaka" target="blank">
+                                            <FaTiktok />
+                                        </LinkIcon>
                                     </IconItem>
                                     <IconItem>
-                                        <FaInstagram />
+                                        <LinkIcon href="https://www.instagram.com/mukhlishaka/" target="blank">
+                                            <FaInstagram />
+                                        </LinkIcon>
                                     </IconItem>
                                 </MobileIcon>
                             </FooterLinkItems>

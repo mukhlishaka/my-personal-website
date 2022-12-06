@@ -91,6 +91,10 @@ export const MobileIcon = styled.div`
     align-items: center;
 `
 
+export const LinkIcon = styled.a`
+    color: white;
+`
+
 export const IconItem = styled.div`
     margin-top: 20px;
     margin-right: 30px;
