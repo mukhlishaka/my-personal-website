@@ -8,11 +8,12 @@ import {
     CardCol,
     ImageWrapper,
     Img,
-    CardTitle, CardText, CardBtnWrapper, ArrowForward, ArrowRight
+    CardTitle, CardText, CardBtnWrapper
 } from '../ProjectSection/ProjectElements'
 import React, { useState } from 'react'
-import { Button } from '../ButtonElements'
-import Project1 from '../../images/kawanbantu.jpg'
+import { ButtonLink } from '../ButtonElements'
+import Project1 from '../../images/playtraditionalgame.jpg'
+import Project2 from '../../images/kawanbantu.jpg'
 
 const Project = () => {
     const [hover, setHover] = useState(false)
@@ -33,12 +34,24 @@ const Project = () => {
                             <CardCol>
                                 <ImageWrapper>
                                     <Img src={Project1} />
+                                    <CardTitle>Traditional Game</CardTitle>
+                                    <CardText>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</CardText>
+                                    <CardBtnWrapper>
+                                        <ButtonLink href="https://play-traditional-game.netlify.app/" target="blank" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
+                                            Live Demo
+                                        </ButtonLink>
+                                    </CardBtnWrapper>
+                                </ImageWrapper>
+                            </CardCol>
+                            <CardCol>
+                                <ImageWrapper>
+                                    <Img src={Project2} />
                                     <CardTitle>Kawan Bantu</CardTitle>
                                     <CardText>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</CardText>
                                     <CardBtnWrapper>
-                                        <Button to="login" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
-                                            Live Demo {hover ? <ArrowForward /> : <ArrowRight />}
-                                        </Button>
+                                        <ButtonLink href="https://kawan-bantu-mukhlishaka.netlify.app/" target="blank" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
+                                            Live Demo
+                                        </ButtonLink>
                                     </CardBtnWrapper>
                                 </ImageWrapper>
                             </CardCol>
@@ -48,21 +61,9 @@ const Project = () => {
                                     <CardTitle>Kawan Bantu</CardTitle>
                                     <CardText>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</CardText>
                                     <CardBtnWrapper>
-                                        <Button to="login" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
-                                            Live Demo {hover ? <ArrowForward /> : <ArrowRight />}
-                                        </Button>
-                                    </CardBtnWrapper>
-                                </ImageWrapper>
-                            </CardCol>
-                            <CardCol>
-                                <ImageWrapper>
-                                    <Img src={Project1} />
-                                    <CardTitle>Kawan Bantu</CardTitle>
-                                    <CardText>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</CardText>
-                                    <CardBtnWrapper>
-                                        <Button to="login" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
-                                            Live Demo {hover ? <ArrowForward /> : <ArrowRight />}
-                                        </Button>
+                                        <ButtonLink href="https://kawan-bantu-mukhlishaka.netlify.app/" target="blank" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
+                                            Live Demo
+                                        </ButtonLink>
                                     </CardBtnWrapper>
                                 </ImageWrapper>
                             </CardCol>

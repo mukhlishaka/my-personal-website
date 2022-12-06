@@ -87,13 +87,13 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkS)`
-    color: #06283D;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0 1.0rem;
     height: 100%;
     cursor: pointer;
+    color: #06283D;
 
     &:hover {
         color: #47B5FF;

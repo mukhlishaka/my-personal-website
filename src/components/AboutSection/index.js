@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Button } from '../ButtonElements'
+import { ButtonLink } from '../ButtonElements'
 import {
     AboutContainer,
     AboutBg,
@@ -29,12 +29,12 @@ const About = () => {
                     <TextWrapper>
                         <AboutTitle>About Me</AboutTitle>
                         <AboutSubTitle>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium deserunt debitis error perferendis ipsam optio suscipit, deleniti inventore. Omnis labore nulla explicabo repellat dolorum provident est incidunt nisi, asperiores velit repudiandae amet tenetur neque nam deleniti adipisci debitis veritatis accusantium.
+                            Perkenalkan nama saya Mukhlis Haliqul Karim. Saya adalah seorang lulusan Akuntansi yang saat ini sedang beralih profesi menjadi seorang Frontend Developer melalui Pelatihan Fullstack Web Development di Binar Academy. Selain itu, saat ini saya juga seorang Gaming Streamer Partner di platform Facebook Gaming. 
                         </AboutSubTitle>
                         <AboutBtn>
-                            <Button to="login" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
+                            <ButtonLink href='https://drive.google.com/file/d/1XpQx4jnqNBzAhIXCjgqoCNzq07hVEM9n/view?usp=sharing' target='blank' onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
                                 Resume
-                            </Button>
+                            </ButtonLink>
                         </AboutBtn>
                     </TextWrapper>
                 </AboutContent>

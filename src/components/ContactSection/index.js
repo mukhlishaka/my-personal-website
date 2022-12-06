@@ -22,7 +22,7 @@ const Contact = () => {
         setHover(!hover)
     }
     return (
-        <ContactContainer>
+        <ContactContainer name="contact">
             <ContactBg>
                 <TextWrapper>
                     <ContactTitle>Contact For Service</ContactTitle>

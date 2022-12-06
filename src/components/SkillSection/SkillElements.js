@@ -62,4 +62,5 @@ export const Img = styled.img`
     width: 70%;
     height: 70%;
     margin-top: 30px;
+    cursor: pointer;
 `

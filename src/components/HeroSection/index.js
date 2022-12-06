@@ -29,8 +29,8 @@ const HeroSection = () => {
                     Frontend Developer, Gaming Streamer and Enterprenuer
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to="login" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
-                        Get Started {hover ? <ArrowForward/> : <ArrowRight/>}
+                    <Button to="contact" smooth={true} duration={500} spy={true} exact='true' offset={-80} onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
+                        Get Started {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>

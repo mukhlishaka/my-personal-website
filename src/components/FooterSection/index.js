@@ -25,7 +25,7 @@ const Footer = () => {
                     <FooterLinkContainer>
                         <FooterLinkWrapper>
                             <FooterLinkItems>
-                                <FooterLinkImage>
+                                <FooterLinkImage to="home" smooth={true} duration={500} spy={true} exact='true' offset={-80}>
                                     <Img src={Logo} />
                                 </FooterLinkImage>
                                 <FooterText>
@@ -53,14 +53,15 @@ const Footer = () => {
                                 <FooterLinkTitle>
                                     Mukhlis Haka Website
                                 </FooterLinkTitle>
-                                <FooterLink to="/">Home</FooterLink>
-                                <FooterLink to="/">About</FooterLink>
-                                <FooterLink to="/">Project</FooterLink>
-                                <FooterLink to="/">Contact Me</FooterLink>
+                                <FooterLink to="home" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Home</FooterLink>
+                                <FooterLink to="about" smooth={true} duration={500} spy={true} exact='true' offset={-80}>About</FooterLink>
+                                <FooterLink to="project" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Project</FooterLink>
+                                <FooterLink to="contact" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Contact Me</FooterLink>
                             </FooterLinkItems>
                             <FooterLinkItems>
                                 <FooterLinkTitle>My Email for Business</FooterLinkTitle>
                                 <FooterLink>mukhlishaka@gmail.com</FooterLink>
+                                <FooterLink>Haka © 2022 All right reserved.</FooterLink>
                             </FooterLinkItems>
                         </FooterLinkWrapper>
                     </FooterLinkContainer>

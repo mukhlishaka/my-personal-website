@@ -19,24 +19,31 @@ const Navbar = ({ toggle }) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="/">
-                        <ImageLogo src={Logo} /> Home
-                    </NavLogo>
+                    <NavLinks to="home" smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                        <NavLogo to="/">
+                            <ImageLogo src={Logo} /> Home
+                        </NavLogo>
+                    </NavLinks>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='about' smooth={true} duration={500} spy={true} exact='true' offset={-80}>About</NavLinks>
+                            <NavLinks to='about' smooth={true} duration={500} spy={true} exact='true' offset={-80}>About
+                            </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="skill" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Skill</NavLinks>
+                            <NavLinks to="skill" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Skill
+                            </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="project" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Project</NavLinks>
+                            <NavLinks to="project" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Project
+                            </NavLinks>
                         </NavItem>
                         <NavBtn>
-                            <NavBtnLink to="contact" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Contact</NavBtnLink>
+                            <NavLinks to="contact" smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                                <NavBtnLink to="/">Contact</NavBtnLink>
+                            </NavLinks>
                         </NavBtn>
                     </NavMenu>
                 </NavbarContainer>
