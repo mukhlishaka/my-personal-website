@@ -14,6 +14,7 @@ import React, { useState } from 'react'
 import { ButtonLink } from '../ButtonElements'
 import Project1 from '../../images/playtraditionalgame.jpg'
 import Project2 from '../../images/kawanbantu.jpg'
+import Project3 from '../../images/comingsoon.jpg'
 
 const Project = () => {
     const [hover, setHover] = useState(false)
@@ -57,11 +58,11 @@ const Project = () => {
                             </CardCol>
                             <CardCol>
                                 <ImageWrapper>
-                                    <Img src={Project1} />
-                                    <CardTitle>Kawan Bantu</CardTitle>
+                                    <Img src={Project3} />
+                                    <CardTitle>Coming Soon Project</CardTitle>
                                     <CardText>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</CardText>
                                     <CardBtnWrapper>
-                                        <ButtonLink href="https://kawan-bantu-mukhlishaka.netlify.app/" target="blank" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
+                                        <ButtonLink href="" target="blank" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
                                             Live Demo
                                         </ButtonLink>
                                     </CardBtnWrapper>

@@ -1,53 +1,48 @@
-import React from 'react'
-import { useState } from 'react'
-import { Button } from '../ButtonElements'
-import {
-    ContactContainer,
-    ContactBg,
-    ContactContent,
-    TextWrapper,
-    ContactTitle,
-    ContactFormWrapper,
-    Form,
-    FormLabel,
-    FormInput,
-    FormBtnWrapper,
-    FormTextArea
-} from '../ContactSection/ContactElements'
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser'
+import './contact.css'
 
 const Contact = () => {
-    const [hover, setHover] = useState(false)
+    // const [hover, setHover] = useState(false)
 
-    const onHover = () => {
-        setHover(!hover)
-    }
+    // const onHover = () => {
+    //     setHover(!hover)
+    // }
+
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_6gvxme7', 'template_2fvv3j4', form.current, 'ooP7gla1jUAAnG1iQ')
+            .then((result) => {
+                console.log(result.text);
+                console.log('message send')
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
     return (
-        <ContactContainer name="contact">
-            <ContactBg>
-                <TextWrapper>
-                    <ContactTitle>Contact For Service</ContactTitle>
-                </TextWrapper>
-                <ContactContent>
-                    <ContactFormWrapper>
-                        <Form>
-                            <FormLabel>Fullname</FormLabel>
-                            <FormInput type="name" placeholder="Enter Your Name" />
-                        </Form>
-                        <Form>
-                            <FormLabel>Email</FormLabel>
-                            <FormInput type="email" placeholder="Enter Your Email" />
-                        </Form>
-                        <Form>
-                            <FormLabel>Message</FormLabel>
-                            <FormTextArea type="text" placeholder="Enter Your Message"></FormTextArea>
-                        </Form>
-                        <FormBtnWrapper>
-                            <Button to="login" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">Send</Button>
-                        </FormBtnWrapper>
-                    </ContactFormWrapper>
-                </ContactContent>
-            </ContactBg>
-        </ContactContainer>
+        <div className='container'>
+            <div className='background'>
+                <div className='heading'>
+                    Contact Me
+                </div>
+                <div className='contentWrapper'>
+                    <form className='formWrapper' ref={form} onSubmit={sendEmail}>
+                        <label className='my-label-class'>Name</label>
+                        <input className='my-input-class' type="text" name="user_name" />
+                        <label className='my-label-class'>Email</label>
+                        <input className='my-input-class' type="email" name="user_email" />
+                        <label className='my-label-class'>Message</label>
+                        <textarea className='my-input-area' name="message" />
+                        <button className='custom-button' type="submit" value="Send">Kirim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     )
 }
 

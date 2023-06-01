@@ -1,0 +1,120 @@
+.container {
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: 120vh;
+    }
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}
+
+.contentWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 25%;
+    background-color: #DFF6FF;
+    padding: 50px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .contentWrapper {
+        margin: 30px 15%;
+        padding: 50px;
+    }
+}
+
+.formWrapper {
+    display: flex;
+    margin: 10px auto;
+    flex-direction: column;
+    width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+    .formWrapper {
+        display: flex;
+        margin: 10px auto;
+        flex-direction: column;
+        width: 120%;
+    }
+}
+
+.btnWrapper {
+    margin: 10px 0 0 0;
+    padding: 10px;
+}
+
+.my-label-class {
+    margin-bottom: 5px;
+}
+
+.my-input-class {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.my-input-area {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.custom-button {
+    background-color: #06283D;
+    color: white;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.custom-button:hover {
+    background-color: #47B5FF;
+}
