@@ -1,13 +1,13 @@
 .container {
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 95vh;
     position: relative;
 }
 
 @media screen and (max-width: 768px) {
     .container {
-        height: 120vh;
+        height: 75vh;
     }
 }
 
@@ -117,4 +117,10 @@
 
 .custom-button:hover {
     background-color: #47B5FF;
+}
+.center-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }

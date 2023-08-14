@@ -29,10 +29,10 @@ const About = () => {
                     <TextWrapper>
                         <AboutTitle>About Me</AboutTitle>
                         <AboutSubTitle>
-                            Perkenalkan nama saya Mukhlis Haliqul Karim. Saya adalah seorang lulusan Akuntansi yang saat ini sedang beralih profesi menjadi seorang Frontend Developer melalui Pelatihan Fullstack Web Development di Binar Academy. Selain itu, saat ini saya juga seorang Gaming Streamer Partner di platform Facebook Gaming. 
+                            Hello there! I'm Mukhlis, an experienced professional with a unique background in finance and web development. With 2 years of experience as a Finance Project Staff and graduating from a Fullstack Web Development bootcamp last year, I bring a diverse skill set to the table and I'm ready for new challenges.
                         </AboutSubTitle>
                         <AboutBtn>
-                            <ButtonLink href='https://drive.google.com/file/d/1XpQx4jnqNBzAhIXCjgqoCNzq07hVEM9n/view?usp=sharing' target='blank' onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
+                            <ButtonLink href='https://drive.google.com/file/d/1Va-mRxnW5UVz7wTjfSki1MSdhTrf5sDA/view?usp=sharing' target='blank' onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
                                 Resume
                             </ButtonLink>
                         </AboutBtn>

@@ -26,7 +26,7 @@ const HeroSection = () => {
                 <HeroH2>Hi, I'm</HeroH2>
                 <HeroH1>Mukhlis Haliqul Karim</HeroH1>
                 <HeroP>
-                    Frontend Developer, Gaming Streamer and Enterprenuer
+                    Frontend Developer and Gaming Streamer
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button to="contact" smooth={true} duration={500} spy={true} exact='true' offset={-80} onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
